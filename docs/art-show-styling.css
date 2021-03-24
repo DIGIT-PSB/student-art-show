@@ -233,22 +233,44 @@ div.artSection {
     display: flex;
     justify-content: space-evenly;
     padding: .8%;
+    flex-wrap: wrap;
+    float:left;
+   flex-basis: auto;
+   flex-grow: 1;
+   flex-shrink:2;
 }
 
 div.artwork {
     flex:1;
     display:flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    float:left;
+   flex-basis: auto;
+   flex-grow: 1;
+   flex-shrink:2;
+
 }
 
 div.artwork a {
     display:contents;
     flex: 1;
+    flex-wrap: wrap;
+    float:left;
+   flex-basis: auto;
+   flex-grow: 1;
+   flex-shrink:2;
 }
 
 img.art {
     width: 40%;
    /* max-height:50%;*/
+   max-width: 40%;
+   max-height: 80%;
+   display:block;
+   
+   
+   
 }
 
 
