@@ -34,16 +34,33 @@ div.navbar {
     text-align:center;
     margin-top:20px;
     margin-bottom:20px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
     
 }
 
 a.navLink {
     padding-left: 30px;
     padding-right: 30px;
+    margin-left:10px;
+    margin-right:10px;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 120%;
     font-family: 'Rock Salt', cursive;
+    background-image:url(images/watercolor_background2.jpeg);
+    background-position:right bottom;
+    border-radius:25px;
+    transition: .4s;
+    color: black;
+}
+
+a.navLink:hover {
+    border-style:outset;
+    
+    opacity: .6;
+    background-image:url(images/watercolor_background1.jpeg);
 }
 
 footer {
@@ -260,15 +277,26 @@ div.artwork a {
    flex-basis: auto;
    flex-grow: 1;
    flex-shrink:2;
+   
 }
 
-img.art {
+div.artwork a:hover{
+    opacity:.7;
+}
+
+
+div.artwork a img.art:hover {
+    opacity:.7;
+}
+
+div.artwork a img.art {
     width: 40%;
    /* max-height:50%;*/
    max-width: 40%;
    max-height: 80%;
    display:block;
-   
+   opacity:1;
+    transition:4s;
    
    
 }
