@@ -297,6 +297,7 @@ div.artwork a img.art {
    /* max-height:50%;*/
    max-width: 30vmax;
    min-width: 2vmin;
+   max-height: 20vmax;
   /* max-height: 80%;*/
    display:block;
    opacity:1;
