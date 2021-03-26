@@ -287,7 +287,9 @@ div.artwork a:hover{
 
 
 div.artwork a img.art:hover {
-    opacity:.7;
+    outline-style:inset;
+    outline-color:white;
+    
 }
 
 div.artwork a img.art {
@@ -297,7 +299,7 @@ div.artwork a img.art {
    max-height: 80%;
    display:block;
    opacity:1;
-    transition:4s;
+    
    
    
 }
