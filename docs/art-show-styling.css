@@ -294,12 +294,13 @@ div.artwork a img.art:hover {
 
 div.artwork a img.art {
     width: 30vw;
+    /*height: 20vw*/
    /* max-height:50%;*/
    max-width: 30vmax;
-   min-width: 2vmin;
-   max-height: 20vmax;
+   min-width: 10vmin;
+   max-height: 15vmax;
   /* max-height: 80%;*/
-   display:block;
+   /*display:block;*/
    opacity:1;
     
    
