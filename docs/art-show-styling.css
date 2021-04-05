@@ -397,9 +397,48 @@ div.artwork a img.art {
 
 
 
+                                /* COMING SOON PAGE */
 
 
+section.comingsoon {
+    
+}
 
+div.comingsoon {
+    font-family: 'Hi Melody', cursive;
+    font-size:1.5em;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
 
+h1.comingsoon {
+    text-align:center;
+    font-size:1.8em;
+    font-family: 'Rock Salt', cursive;
+    text-shadow: 1px 1px 1px white;
+    margin: 10px;
+}
 
+div.comingsoon p {
+    margin-left: 5%;
+    margin-right: 4%;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+div.comingsoonimg {
+    display:flex;
+    justify-content:center;
+    max-height: 700px;
+    padding:2%;
+    padding-top: .5%;
+    
+}
+
+img#bluenote {
+    border-radius: 10px;
+    max-width: 40%;
+    max-height:32%;
+}
 
