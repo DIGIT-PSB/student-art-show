@@ -435,7 +435,9 @@ div.column2 {
 div.artDesc {
     display:flex;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: space-around;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 div.artDesc p {
@@ -443,6 +445,7 @@ div.artDesc p {
     /*text-indent: 7em;*/
 font-size: .9em;
 margin-top: 4px;
+/*word-spacing: 5px;*/
 }
 
 
@@ -490,6 +493,7 @@ flex-flow: wrap;
 
 .lightbox:target img {
     border: solid 17px rgba(77, 77, 77, 0.8);
+    /*background-color: rgba(77, 77, 77, 0.8);*/
     opacity: 1;
     vertical-align: middle;
     /*/\*webkit-transition: opacity 0.6s;*\/*/
@@ -500,7 +504,7 @@ display: inline-flex;
 justify-self: center;
 /*margin: auto;*/
 object-fit: contain;
-margin-left: 6vw;
+margin-left: 5vw;
 }
 
 .lightbox:target div.fullDesc {
@@ -515,8 +519,8 @@ margin-left: 6vw;
 align-self: center;
 /*/\*display: inline-flex;*\/*/
 justify-self: center;
-margin-top: 20vh;
-/*margin: auto;*/
+margin-bottom: 50vh;
+font-size: large;
 }
 
 /*
@@ -702,6 +706,39 @@ margin-top: 4px;
 font-size: 1.8em;
 margin-top: 4px;
 }
+
+
+                /* VIDEO PAGE */
+
+
+div.VIDrow {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    /*width: 33%;*/
+    height: 100%;
+    flex-basis: max-content;
+    flex-wrap:wrap;
+}
+
+div.video {
+    flex-basis: max-content;
+    
+}
+
+div.vidDesc {
+    line-height: .2em;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+div.vidDesc div {
+    
+}
+
+
 
 
 /* COMING SOON PAGE */
