@@ -744,6 +744,9 @@ div.vidDesc div {
     flex-wrap:wrap;
 }
 
+div.right {
+    text-align:right;
+}
 
 
 
