@@ -732,10 +732,16 @@ div.vidDesc {
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+
+div.video iframe {
+    max-width: 90vw;
+    object-fit:contain;
 }
 
 div.vidDesc div {
-    
+    flex-wrap:wrap;
 }
 
 
