@@ -488,6 +488,17 @@ justify-content:center;
 flex-flow: wrap;
 }
 
+@media only screen and (max-width: 768px) /*(orientation: portrait)*/ {
+  lightbox:target img { max-width: 90%; 
+  margin-top: 15vh;
+  object-position:center;
+  }
+}
+
+/*@media screen and (orientation: landscape) {
+  img.ri { max-height: 90%; }
+}*/
+
 .lightbox:target div.container {
     display:flex;
     flex-flow: column;
@@ -513,7 +524,7 @@ display: inline-flex;
 justify-self: center;
 /*margin: auto;*/
 object-fit: contain;
-margin-left: 5vw;
+margin-left: 3vw;
 }
 
 .lightbox:target div.fullDesc {
@@ -590,14 +601,19 @@ margin: auto;
 
 .light-btn:hover {
     background-color: #111;
+    opacity:1;
 }
 
 .btn-prev {
-    left: 7%;
+    left: 1.5%;
+    opacity:.5;
+    transition: 2s ease;
 }
 
 .btn-next {
-    right: 7%;
+    right: 1.5%;
+    opacity:.5;
+    transition: 2s ease;
 }
 
 .btn-close {
@@ -610,10 +626,13 @@ margin: auto;
     padding: 10px 15px;
     border-radius: 1px;
     text-decoration: none;
+    opacity:.4;
+    transition: 2s ease;
 }
 
 .btn-close:hover {
     background-color: #740404;
+    opacity:1;
 }
 
 
@@ -661,6 +680,7 @@ div.series {
     flex-direction:column;
     height:100%;
     flex-basis:max-content;
+    margin: 2%;
 }
 
 div.seriesWrap {
@@ -714,6 +734,16 @@ margin-top: 4px;
     /*text-indent: 7em;*/
 font-size: 1.8em;
 margin-top: 4px;
+display:flex;
+text-align:center;
+justify-content: center;
+flex-direction: row;
+margin: auto;
+flex-wrap:wrap;
+}
+
+.series div.seriesTitle p {
+    margin: 10px;
 }
 
 
