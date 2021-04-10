@@ -494,6 +494,11 @@ flex-flow: wrap;
   justify-content: flex-start;
     width:100%;
     }
+    
+/*.lightbox:target div.imgDesc {
+    display:flex;
+    flex-wrap:wrap;
+}*/
 
 .lightbox:target img {
     border: solid 17px rgba(77, 77, 77, 0.8);
