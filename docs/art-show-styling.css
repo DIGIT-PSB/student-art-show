@@ -106,7 +106,8 @@ div.homeText {
 }
 
 h2.homeHead {
-    text-indent: 2em;
+    /*text-indent: 2em;*/
+    text-align:center;
     margin: 1.5%;
 }
 
@@ -118,15 +119,17 @@ p.homeText {
 div.patpic {
     display: flex;
     padding-bottom: 2%;
+    justify-content:center;
 }
 
 img#pat {
-    margin: auto;
+    /*margin: auto;
     width: 40%;
-    flex: 1;
-    max-width: 50%;
+    flex: 1;*/
+    max-width: 60%;
     opacity: 1;
     border-radius: 5px;
+    
 }
 
 
@@ -162,13 +165,18 @@ p.error {
 div.about {
     font-family: 'Hi Melody', cursive;
     font-size: 1.5em;
-    margin: auto;
+   /* margin: auto;*/
     display: flex;
     flex-direction: column;
+    margin: auto;
+    
+
 }
 
 h1.about {
-    margin-left: 6%;
+   margin: auto;
+    margin-top: 1%;
+    text-align:center;
 }
 
 p.about {
@@ -198,11 +206,12 @@ div.recipe {
     padding-bottom: 2%;
     justify-content: center;
 align-content: center;
+margin:auto;
 }
 
 img#recipe {
-    margin: auto;
-    width: 400px;
+    /*margin: auto;*/
+    max-width: 60%;
 
     border-radius: 15px;
 }
@@ -232,15 +241,17 @@ div.gallText {
 }
 
 h2.galleryhead {
-    text-indent: 2em;
+    /*text-indent: 2em;*/
     font-size: 2em;
+    text-align:center;
 }
 
 p.gallPara {
     font-size: 1.5em;
     text-indent: 1.5em;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 3%;
+    padding-right: 2%;
+    
 }
 
 
@@ -252,11 +263,15 @@ div.artBrowse h1 {
     font-size: 2em;
 }
 
+
+
 div.button {
-    padding: 7%;
+    /*padding: 7%;*/
     background-size: cover;
     background-position: center;
-
+    max-width: 200%;
+width: 150%;
+object-fit: contain;
     transition: .3s ease;
 }
 
@@ -303,6 +318,8 @@ div.artTypeLinks {
 
 a.artType {
     font-size: 1.8em;
+    justify-content: center;
+display: flex;
 }
 
 
@@ -492,6 +509,11 @@ flex-flow: wrap;
   lightbox:target img { max-width: 90%; 
   margin-top: 15vh;
   object-position:center;
+  
+  }
+  
+  lightbox:target div.fullDesc {
+      margin-bottom: 500vh;
   }
 }
 
@@ -618,13 +640,13 @@ margin: auto;
 .btn-prev {
     left: 1.5%;
     opacity:.5;
-    transition: 2s ease;
+    transition: 1s ease;
 }
 
 .btn-next {
     right: 1.5%;
     opacity:.5;
-    transition: 2s ease;
+    transition: 1s ease;
 }
 
 .btn-close {
@@ -638,7 +660,7 @@ margin: auto;
     border-radius: 1px;
     text-decoration: none;
     opacity:.4;
-    transition: 2s ease;
+    transition: 1s ease;
 }
 
 .btn-close:hover {
@@ -825,15 +847,19 @@ h1.comingsoon {
 
 div.comingsoon p {
     margin-left: 5%;
-    margin-right: 4%;
+    margin-right: 5%;
     font-size: 1.4em;
     text-align: center;
+}
+
+p.seeyou {
+    margin-top: auto;
 }
 
 div.comingsoonimg {
     display: flex;
     justify-content: center;
-    max-height: 700px;
+    /*max-height: 40%;*/
     padding: 2%;
     padding-top: .5%;
 
@@ -842,5 +868,6 @@ div.comingsoonimg {
 img#bluenote {
     border-radius: 10px;
     max-width: 40%;
-    max-height: 32%;
+   /* max-height: 32%;*/
+    object-fit:contain;
 }
