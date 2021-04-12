@@ -8,6 +8,14 @@ body {
     background-size: cover;
 }
 
+.lightbox:target img, .body:focus{
+    /*background-image:none;*/
+    visibility:visible
+    /*transform:scale(100);*/
+}
+
+
+
 header {
     margin: auto;
     display: flex;
@@ -481,8 +489,15 @@ margin-top: 4px;
     text-align: center;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
+    font-family: 'Hi Melody', cursive;
+    font-size: 1.5em;
+}
+
+.lightbox-background {
+    opacity: 1 !important;
+    
 }
 
 .lightbox img {
@@ -492,6 +507,8 @@ margin-top: 4px;
     margin-bottom: 1.5%;
     opacity: 0;
 }
+
+
 
 .lightbox:target {
     /** Remove default browser outline */
@@ -534,12 +551,15 @@ flex-flow: wrap;
 }*/
 
 .lightbox:target img {
+animation: fadeInScale 1.2s ease-in-out;
+
+
     border: solid 17px rgba(77, 77, 77, 0.8);
-    /*background-color: rgba(77, 77, 77, 0.8);*/
-    opacity: 1;
+   /* background-color: rgba(77, 77, 77, 0.95);*/
+    opacity: 1 !important;
     vertical-align: middle;
     /*/\*webkit-transition: opacity 0.6s;*\/*/
-    transition: opacity 0.6s;
+    transition: opacity 0.6s linear;
     max-height: 95vh;
 align-self: center;
 display: inline-flex;
@@ -549,6 +569,13 @@ object-fit: contain;
 margin-left: 3vw;
 }
 
+/*@keyframes fadeInScale {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+
+  	/\*transition: opacity 0.3s linear;*\/
+}
+*/
 @media only screen and (max-device-width: 480px) {
         .lightbox:target img {
             margin-top: 20%;
