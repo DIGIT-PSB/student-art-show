@@ -140,6 +140,44 @@ img#pat {
     
 }
 
+div.biopicWrap {
+    display:flex;
+    flex-direction:column;
+    font-family: 'Hi Melody', cursive;
+    font-size: 1.5em;
+    margin: auto;
+}
+
+div.bioText p {
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+div.biopic {
+    display:flex;
+    justify-content:center;
+    padding-bottom:2%;
+}
+
+div.biopic iframe {
+    max-width: 70%;
+   /* height: 45%;*/
+    object-fit:contain;
+    max-height: 90vh
+}
+
+@media only screen and (max-width: 768px) /*(orientation: portrait)*/ {
+  div.biopic iframe { max-width: 90%; 
+  
+  object-position:center;
+  /*max-height: 35vh;*/
+  max-height: 60vh;
+  }
+  
+  }
+
+
+
 
 
 /* 404 ERROR PAGE */
