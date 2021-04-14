@@ -134,9 +134,11 @@ img#pat {
     /*margin: auto;
     width: 40%;
     flex: 1;*/
-    max-width: 60%;
+    max-width:65vw;
+    width: 60%;
     opacity: 1;
     border-radius: 5px;
+    object-fit:contain;
     
 }
 
