@@ -143,17 +143,25 @@ img#pat {
     
 }
 
-div.biopicWrap {
+/*div.biopicWrap {
     display:flex;
     flex-direction:column;
     font-family: 'Hi Melody', cursive;
     font-size: 1.5em;
     margin: auto;
+}*/
+
+div.bioText {
+    display:flex;
+    margin: auto;
+    
 }
 
 div.bioText p {
     padding-right: 4%;
     padding-left: 4%;
+    font-family: 'Hi Melody', cursive;
+    font-size: 1.5em;
 }
 
 div.biopic {
@@ -163,18 +171,18 @@ div.biopic {
 }
 
 div.biopic iframe {
-    max-width: 70%;
+    max-width: 80vw;
    /* height: 45%;*/
     object-fit:contain;
-    max-height: 90vh
+    max-height: 90vh;
 }
 
-@media only screen and (max-width: 768px) /*(orientation: portrait)*/ {
+@media only screen and (max-width: 800px) /*(orientation: portrait)*/ {
   div.biopic iframe { max-width: 90%; 
   
   object-position:center;
   /*max-height: 35vh;*/
-  max-height: 60vh;
+  max-height: 20vh;
   }
   
   }
