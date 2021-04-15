@@ -103,6 +103,7 @@ section.content {
     opacity: .8;
     display: flex;
 flex-direction: column;
+padding-bottom: 1%;
 }
 
 div.homeText {
@@ -268,9 +269,10 @@ margin:auto;
 
 img#recipe {
     /*margin: auto;*/
-    max-width: 60%;
-
+   /* max-width: 60%;*/
+    object-fit:contain;
     border-radius: 15px;
+    width: 45vw;
 }
 
 
