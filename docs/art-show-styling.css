@@ -85,9 +85,6 @@ p.foot {
     font-size: 1.5em;
 }
 
-a.footlink {
-
-}
 
 
 /* HOMEPAGE STYLING */
@@ -144,13 +141,6 @@ img#pat {
     
 }
 
-/*div.biopicWrap {
-    display:flex;
-    flex-direction:column;
-    font-family: 'Hi Melody', cursive;
-    font-size: 1.5em;
-    margin: auto;
-}*/
 
 div.bioText {
     display:flex;
@@ -177,6 +167,8 @@ div.biopic iframe {
     object-fit:contain;
     max-height: 90vh;
 }
+
+/* RESPONSIVE CSS STYLES FOR MOBILE SCREENS */ 
 
 @media only screen and (max-width: 800px) /*(orientation: portrait)*/ {
   div.biopic iframe { max-width: 90%; 
@@ -348,24 +340,6 @@ div.button img {
     border-radius: 25px;
 }
 
-div.button#analog {
-    /*background-image:url(images/buttons/analog_button.jpg);*/
-}
-
-div.button#photo {
-    /*background-image:url(images/buttons/photo_button.jpg);
-*/
-}
-
-div.button#digart {
-    /*background-image:url(images/buttons/digart_button.jpg);
-*/
-}
-
-div.button#motion {
-    /*background-image:url(images/buttons/motion_button.jpg);
-*/
-}
 
 div.artTypeLinks {
     display: flex;
@@ -381,44 +355,6 @@ a.artType {
 display: flex;
 }
 
-
-/*div.artWrap {
-    display: flex;
-    margin: 3%;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-
-div.column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-    padding: .8%;
-    flex-wrap: wrap;
-    float: left;
-    flex-basis: auto;
-    flex-grow: 1;
-    flex-shrink: 2;
-    width: 33%;
-    align-items: center;
-}
-
-div.artwork {
-    flex: 1;
-    /\*display:flex;*\/
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    float: left;
-    flex-basis: auto;
-    flex-grow: 1;
-    flex-shrink: 2;
-    position: relative;
-    width: 99%;
-    align-items: center;
-
-}*/
 
 div.artwork a {
     display: contents;
@@ -442,24 +378,6 @@ div.artwork a img.art:hover {
 
 }
 
-/*div.artwork a img.art {
-    /\*   width: 30vw;*\/
-    /\*height: 20vw*\/
-    /\* max-height:50%;*\/
-    /\*max-width: 30vmax;*\/
-    /\*min-width: 10vmin;*\/
-    max-height: 15vmax;
-    /\* max-height: 80%;*\/
-    /\*display:block;*\/
-    opacity: 1;
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-
-
-
-}
-*/
 
 
 div.artWrap {
@@ -529,6 +447,7 @@ margin-top: 4px;
 }
 
 
+
 /* GALLERY LIGHTBOX VIEWING */
 
 
@@ -573,6 +492,8 @@ justify-content:center;
 flex-flow: wrap;
 }
 
+/* RESPONSIVE MOBILE SCREENS - LIGHTBOX (full view) IMAGES */
+
 @media only screen and (max-width: 768px) /*(orientation: portrait)*/ {
   lightbox:target img { max-width: 90%; 
   margin-top: 15vh;
@@ -585,9 +506,21 @@ flex-flow: wrap;
   }
 }
 
-/*@media screen and (orientation: landscape) {
-  img.ri { max-height: 90%; }
-}*/
+/* phone orientation: portrait */ 
+@media only screen and (max-device-width: 480px) {
+    .lightbox:target img {
+        margin-top: 20%;
+        
+    }
+    
+    .btn-close {
+        margin-top: 2%;
+    }
+}
+
+/* END RESPONSIVE LIGHTBOX RULES FOR MOBILE SCREENS  */
+
+
 
 .lightbox:target div.container {
     display:flex;
@@ -596,10 +529,7 @@ flex-flow: wrap;
     width:100%;
     }
     
-/*.lightbox:target div.imgDesc {
-    display:flex;
-    flex-wrap:wrap;
-}*/
+
 
 .lightbox:target img {
 animation: fadeInScale 1.2s ease-in-out;
@@ -620,23 +550,7 @@ object-fit: contain;
 margin-left: 3vw;
 }
 
-/*@keyframes fadeInScale {
-  0% { transform: scale(0.6); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
 
-  	/\*transition: opacity 0.3s linear;*\/
-}
-*/
-@media only screen and (max-device-width: 480px) {
-        .lightbox:target img {
-            margin-top: 20%;
-            
-        }
-        
-        .btn-close {
-            margin-top: 2%;
-        }
-    }
 
 .lightbox:target div.fullDesc {
      background-color: rgba(77, 77, 77, 0.8);
@@ -654,47 +568,7 @@ margin-bottom: 50vh;
 font-size: large;
 }
 
-/*
-}
 
-
-
-.lightbox:target div.container div.fullDesc {
-    position:absolute;
-    bottom: 8px;
-  right: 16px;
-  align-self: flex-end;
-    text-align:left;
-}*/
-
-/*.lightbox:target figure {
-    display:flex;
-    flex-flow: row;
-  justify-content: flex-start;
-    width:100%;
-}
-
-.lightbox:target figcaption.fullDesc {
-    /\*display:inline-flex;
-    flex-direction:column;*\/
-    align-self: flex-end;
-    text-align:left;
-    /\*display:table-caption;
-    caption-side:bottom;*\/
-}
-
-.lightbox:target figcaption.fullDesc p{
-    background-color: rgba(77, 77, 77, 0.8);
-    opacity: 1;
-    vertical-align: middle;
-    /\*webkit-transition: opacity 0.6s;*\/
-    transition: opacity 0.6s;
-    max-height: 45vw;
-align-self: center;
-/\*display: inline-flex;*\/
-justify-self: center;
-margin: auto;
-}*/
 
 .light-btn {
     color: #fafafa;
@@ -900,12 +774,9 @@ div.right {
 
 
 
-/* COMING SOON PAGE */
+/* COMING SOON PAGE (404 */
 
 
-section.comingsoon {
-
-}
 
 div.comingsoon {
     font-family: 'Hi Melody', cursive;
