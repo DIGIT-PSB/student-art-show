@@ -540,6 +540,32 @@ margin-top: 4px;
       float: right;
       display: block;
     }
+
+    .dropdown .dropbtn {
+        font-size: 17px;    
+        font-weight: bold;
+        border: none;
+        outline: none;
+        padding: 5px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+  }
+
+  @media screen and (max-width: 950px) {
+
+
+    .dropdown .dropbtn {
+        font-size: 17px;    
+        font-weight: bold;
+        border: none;
+        outline: none;
+        padding: 5px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
   }
   
   @media screen and (max-width: 600px) {
