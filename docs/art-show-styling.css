@@ -646,9 +646,9 @@ flex-flow: wrap;
 
 /* RESPONSIVE MOBILE SCREENS - LIGHTBOX (full view) IMAGES */
 
-@media only screen and (max-width: 768px) /*(orientation: portrait)*/ {
+@media only screen and (max-width: 950px) /*(orientation: portrait)*/ {
   lightbox:target img { max-width: 90%; 
-  margin-top: 15vh;
+  margin-top: 30vh;
   object-position:center;
   
   }
@@ -656,13 +656,56 @@ flex-flow: wrap;
   lightbox:target div.fullDesc {
       margin-bottom: 500vh;
   }
+
+  a.navLink{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 90%;
+  }
+  .navbar{
+      flex-wrap: nowrap;
+  }
+
+  h1.title, h3.title{
+      font-size: .9rem;
+  }
+  h2.galleryhead, p.gallPara, div.artBrowse h1{
+      font-size: 1rem;
+  }
+
+  div.seriesTitle p{
+      font-size: 1rem;
+  }
+
+  div.seriesWrap{
+      flex-flow: column !important;
+  }
+
+  div.SartDesc{
+      font-size: .6rem;
+  }
+
+  div.row{
+      flex-flow:column !important;
+  }
+
+  p.foot{
+      font-size: 1rem;
+  }
+
 }
 
 /* phone orientation: portrait */ 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 500px) {
     .lightbox:target img {
-        margin-top: 20%;
+        margin-top: 25vh;
         
+    }
+
+    .light-btn{
+        margin-top:-25vh;
     }
     
     .btn-close {
