@@ -233,6 +233,17 @@ p.about {
     padding-right: 4%;
     padding-left: 4%;
 }
+div.aboutshow{
+text-align: center;  
+float:right;
+padding-right: 4%;
+margin:inherit
+}
+p.aboutshow{
+text-align: left; 
+padding-right: 4%;
+margin:inherit
+}
 
 p.quote {
     text-align: center;
@@ -264,7 +275,7 @@ img#recipe {
    /* max-width: 60%;*/
     object-fit:contain;
     border-radius: 15px;
-    width: 45vw;
+    width: 30vw;
 }
 
 
