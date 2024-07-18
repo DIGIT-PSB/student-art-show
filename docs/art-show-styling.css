@@ -60,14 +60,22 @@ a.navLink {
     background-image: url(images/watercolor_background2.jpeg);
     background-position: right bottom;
     border-radius: 25px;
-    transition: .4s;
+    transition: transform 0.3s ease;
     color: black;
+    display: inline-block;
+    height: 40px; 
+    width: 220px; 
+    line-height: 30px; 
+    text-align: center; 
+    margin: 10px; 
+    transform-origin: center; 
+    box-sizing: border-box;
 }
 
 a.navLink:hover {
     border-style: outset;
-
-    opacity: .6;
+    transform: scale(1.1);
+    opacity: .8;
     background-image: url(images/watercolor_background1.jpeg);
 }
 
@@ -452,8 +460,9 @@ margin-top: 4px;
 .pastYearsWrap{
     position:absolute;
     float:right;
-   
+    margin: 10px;
 }
+
 
 .dropdown {
     float: right;
@@ -464,7 +473,7 @@ margin-top: 4px;
   }
   
   .dropdown .dropbtn {
-    font-size: 17px;    
+    font-size: 20px;    
     font-weight: bold;
     border: none;
     outline: none;
@@ -476,20 +485,23 @@ margin-top: 4px;
   
   .dropdown-content {
     display: none;
+    border-radius: 10px;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #ffccff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   .dropdown-content a {
+    font-size: 20px;
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
+    
   }
   
   .topnav a:hover, .dropdown:hover .dropbtn {
@@ -502,6 +514,12 @@ margin-top: 4px;
     background-position: center;
     color: black;
     font-weight: bold;
+    border-radius: 10px;
+    text-shadow: 
+    -1px -1px 0 white,  
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
   }
   
   .dropdown:hover .dropdown-content {
@@ -698,6 +716,7 @@ flex-flow: wrap;
 }
 
 /* phone orientation: portrait */ 
+/*  
 @media only screen and (max-device-width: 500px) {
     .lightbox:target img {
         margin-top: 25vh;
@@ -712,7 +731,7 @@ flex-flow: wrap;
         margin-top: 2%;
     }
 }
-
+*/
 /* END RESPONSIVE LIGHTBOX RULES FOR MOBILE SCREENS  */
 
 
