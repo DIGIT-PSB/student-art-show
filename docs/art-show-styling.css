@@ -359,6 +359,7 @@ div.artTypeLinks {
     /* align-items: center;*/
     justify-content: space-between;
     /*margin: 5%;*/
+    
 }
 
 a.artType {
@@ -683,10 +684,20 @@ flex-flow: wrap;
   h1.title, h3.title{
       font-size: .9rem;
   }
-  h2.galleryhead, p.gallPara, div.artBrowse h1{
+  h2.galleryhead, p.gallPara {
       font-size: 1rem;
   }
-
+div.artBrowse h2{
+ font-size: 1rem;
+ text-align:center
+}
+p.artBrowse{
+font-size: 1rem;
+ text-align:right  
+}
+p.oldcaptions{
+text-align:left   
+}
   div.seriesTitle p{
       font-size: 1rem;
   }
