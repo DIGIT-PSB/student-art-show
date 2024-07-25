@@ -232,17 +232,24 @@ h1.about {
 p.about {
     padding-right: 4%;
     padding-left: 4%;
+    text-align:left
 }
 div.aboutshow{
 text-align: center;  
 float:right;
 padding-right: 4%;
-margin:inherit
+margin:inherit;
+font-family: 'Hi Melody', cursive;
+font-size: 1.5em;
+flex-direction: column;
 }
 p.aboutshow{
 text-align: left; 
-padding-right: 4%;
-margin:inherit
+
+
+margin:auto;
+font-family: 'Hi Melody', cursive;
+    font-size: 1.0em;
 }
 
 p.quote {
