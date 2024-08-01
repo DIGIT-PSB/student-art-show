@@ -378,7 +378,19 @@ div.button img {
     border-radius: 25px;
     
 }
+div.container{
+position:relative;
+text-align:center;
+color:black;
 
+font-size:40.0px
+}
+div.buttontext{
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-40%);
+}
 div.arttypecaptions{
 margin:auto;
 text-align:left;
