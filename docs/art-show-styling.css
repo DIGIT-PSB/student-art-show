@@ -81,10 +81,18 @@ footer {
 p.foot {
     flex: 1;
     text-align: center;
-    font-family: 'Hi Melody', cursive;
-    font-size: 1.5em;
+    font-family: "Snell Roundhand", cursive;
+    font-size: 1.25em;
 }
+div.footer{
+background:black;
+color:white;
+border-width:thick;
+border-style: solid;
+border-color:red;
+font-family:"Snell Roundhand", cursive;
 
+}
 
 
 /* HOMEPAGE STYLING */
@@ -104,7 +112,7 @@ padding-bottom: 1%;
 }
 
 div.homeText {
-    font-family: 'Hi Melody', cursive;
+    font-family: "Snell Roundhand", cursive;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -114,6 +122,7 @@ h2.homeHead {
     /*text-indent: 2em;*/
     text-align:center;
     margin: 1.5%;
+    font-family:"Snell Roundhand", cursive;
     font-size:2.5em
 }
 
@@ -152,7 +161,7 @@ div.bioText {
 div.bioText p {
     padding-right: 4%;
     padding-left: 4%;
-    font-family: 'Hi Melody', cursive;
+    font-family: "Snell Roundhand", cursive;
     font-size: 1.5em;
 }
 
@@ -214,7 +223,7 @@ p.error {
 
 
 div.about {
-    font-family: 'Hi Melody', cursive;
+    font-family: "Snell Roundhand", cursive;
     font-size: 1.5em;
    /* margin: auto;*/
     display: flex;
@@ -240,7 +249,7 @@ text-align: center;
 float:right;
 padding-right: 4%;
 margin:inherit;
-font-family: 'Hi Melody', cursive;
+font-family: "Snell Roundhand", cursive;
 font-size: 1.5em;
 flex-direction: column;
 }
@@ -249,16 +258,25 @@ text-align: left;
 
 
 margin:auto;
-font-family: 'Hi Melody', cursive;
+font-family:"Snell Roundhand", cursive;
     font-size: 1.0em;
 }
+div.quote{
+background:blue;
+color:white;
+border-color:black;
+border-width:thick;
+border-style:solid;
 
+
+}
 p.quote {
     text-align: center;
     padding-right: 4%;
     padding-left: 4%;
     margin-top: .5%;
     margin-bottom: .5%;
+    font-family:"Brush Script MT", "Brush Script Std", cursive
 }
 
 p.from {
@@ -323,6 +341,7 @@ section.gallery {
 
 div.gallText {
     padding-top: 20px;
+    
 }
 
 h2.galleryhead {
@@ -407,6 +426,9 @@ div.artTypeLinks {
     flex-direction: row;
     /* align-items: center;*/
     justify-content: space-between;
+    border-style:solid;
+    border-width:thick;
+    border-color:black
     /*margin: 5%;*/
     
 }
@@ -566,6 +588,9 @@ margin-top: 4px;
     font-weight: bold;
   }
   
+  a.link{
+ color:white
+  }
   .dropdown:hover .dropdown-content {
     display: block;
   }
