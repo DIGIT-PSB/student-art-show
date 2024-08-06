@@ -4,8 +4,13 @@
                      * font-family: 'Hi Melody', cursive;
                      * font-family: 'Dawning of a New Day', cursive;*/
 body {
-    background-image: url("images/watercolor_bckgrnd4.jpeg");
+    background-image: url("images/watercolor_bckgrnd4-min.jpeg");
     background-size: cover;
+
+}
+#bg {
+
+
 }
 
 .lightbox:target img, .body:focus{
@@ -57,7 +62,7 @@ a.navLink {
     padding-bottom: 5px;
     font-size: 120%;
     font-family: 'Rock Salt', cursive;
-    background-image: url(images/watercolor_background2.jpeg);
+    /*background-image: url(images/watercolor_background2.jpeg);*/
     background-position: right bottom;
     border-radius: 25px;
     transition: transform 0.3s ease;
@@ -74,9 +79,8 @@ a.navLink {
 
 a.navLink:hover {
     border-style: outset;
-    transform: scale(1.1);
-    opacity: .8;
-    background-image: url(images/watercolor_background1.jpeg);
+    opacity: .6;
+    /*background-image: url(images/watercolor_background1.jpeg);*/
 }
 
 footer {
@@ -467,7 +471,7 @@ margin-top: 4px;
 .dropdown {
     float: right;
     overflow: hidden;
-    background-image: url(images/watercolor_background2.jpeg);
+    /*background-image: url(images/watercolor_background2.jpeg);*/
     background-position: bottom right;
     border-radius: 10px;
   }
@@ -510,7 +514,7 @@ margin-top: 4px;
   }
   
   .dropdown-content a:hover {
-    background-image: url(images/watercolor_background2.jpeg);
+    /*background-image: url(images/watercolor_background2.jpeg);*/
     background-position: center;
     color: black;
     font-weight: bold;
@@ -530,7 +534,7 @@ margin-top: 4px;
     position: absolute;
     right: 10vw;
     padding: 10px;
-    background-image: url(images/watercolor_background2.jpeg);
+    /*background-image: url(images/watercolor_background2.jpeg);*/
     background-position: bottom right;
     border-radius: 10px;
   }
@@ -555,7 +559,7 @@ margin-top: 4px;
         position: absolute;
         right: 10vw;
         padding: 4px;
-        background-image: url(images/watercolor_background2.jpeg);
+        /*background-image: url(images/watercolor_background2.jpeg);*/
         background-position: bottom right;
         border-radius: 10px;
         max-width: 26vw;
