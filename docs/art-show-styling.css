@@ -344,6 +344,7 @@ img.retro{
 
 
 /* ART EXHIBITS PAGE STYLING */
+/*Photo gallery also uses some of this CSS*/
 
 
 section.gallery {
@@ -955,10 +956,24 @@ text-align:left
 
 
 
-/* PHOTO GALLERY */
+
+                /* PHOTO GALLERY */            
+/*separator line*/
+hr.rounded {
+  border-top: 8px solid #5d99a8;
+  border-radius: 5px;
+  margin-top: 75px;
+}                
+.seriesTitle {
+    line-height: .1em;
+font-size: 1.8em;
+  margin-top: 35px;
+}
 
 
-div.photoartWrap {
+
+/*OLD PHOTO PAGE FORMATTING - NO LONGER USED*/
+/*div.photoartWrap {
     display: flex;
     flex-direction: row;
     overflow-y: auto;
@@ -974,7 +989,7 @@ div.row {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    /*width: 33%;*/
+    /\*width: 33%;*\/
     height: 100%;
     flex-basis: max-content;
 }
@@ -984,10 +999,10 @@ div.row2 {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    /*width: 33%;*/
+    /\*width: 33%;*\/
     height: 100%;
     flex-basis: max-content;
-    /*flex-wrap:wrap;*/
+    /\*flex-wrap:wrap;*\/
 }
 
 div.series {
@@ -1028,9 +1043,10 @@ div.series2wrap img {
 
 div.SartDesc {
     line-height: .1em;
-    /*text-indent: 7em;*/
-    font-size: .9em;
-    margin-top: 4px;
+    /\*text-indent: 7em;*\/
+font-size: .9em;
+margin-top: 4px;
+
 }
 
 .row img {
@@ -1049,21 +1065,21 @@ div.SartDesc {
 
 .series div.seriesTitle {
     line-height: .1em;
-    /*text-indent: 7em;*/
-    font-size: 1.8em;
-    margin-top: 4px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: row;
-    margin: auto;
-    flex-wrap: wrap;
+    /\*text-indent: 7em;*\/
+font-size: 1.8em;
+margin-top: 4px;
+display:flex;
+text-align:center;
+justify-content: center;
+flex-direction: row;
+margin: auto;
+flex-wrap:wrap;
 }
 
 .series div.seriesTitle p {
     margin: 10px;
-}
-
+}*/
+/*END - OLD PHOTO PAGE FORMATTING*/
 
 /* VIDEO PAGE */
 
