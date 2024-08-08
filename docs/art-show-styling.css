@@ -90,10 +90,18 @@ footer {
 p.foot {
     flex: 1;
     text-align: center;
-    font-family: 'Hi Melody', cursive;
-    font-size: 1.5em;
+    font-family: "Snell Roundhand", cursive;
+    font-size: 1.25em;
 }
+div.footer{
+background:black;
+color:white;
+border-width:thick;
+border-style: solid;
+border-color:red;
+font-family:"Snell Roundhand", cursive;
 
+}
 
 
 /* HOMEPAGE STYLING */
@@ -114,8 +122,7 @@ section.content {
 }
 
 div.homeText {
-    font-family: 'Hi Melody', cursive;
-    font-size: 1.5em;
+    font-family: "Snell Roundhand", cursive;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -125,25 +132,32 @@ h2.homeHead {
     /*text-indent: 2em;*/
     text-align: center;
     margin: 1.5%;
+    font-family:"Snell Roundhand", cursive;
+    font-size:2.5em
 }
 
 p.homeText {
     padding-right: 4%;
     padding-left: 4%;
+    font-size:1.75em
 }
 
 div.patpic {
     display: flex;
     padding-bottom: 2%;
-    justify-content: center;
-    max-height: 90vh;
+
+    justify-content:center;
+    max-height: 75vh;
+
 }
 
 img#pat {
     /*margin: auto;
     width: 40%;
     flex: 1;*/
-    max-width: 65vw;
+
+    max-width:25vw;
+
     width: 60%;
     opacity: 1;
     border-radius: 5px;
@@ -161,7 +175,7 @@ div.bioText {
 div.bioText p {
     padding-right: 4%;
     padding-left: 4%;
-    font-family: 'Hi Melody', cursive;
+    font-family: "Snell Roundhand", cursive;
     font-size: 1.5em;
 }
 
@@ -172,10 +186,12 @@ div.biopic {
 }
 
 div.biopic iframe {
-    max-width: 80vw;
-    /* height: 45%;*/
-    object-fit: contain;
-    max-height: 90vh;
+
+    max-width: 46vw;
+   /* height: 45%;*/
+    object-fit:contain;
+    max-height: 46vh;
+
 }
 
 /* RESPONSIVE CSS STYLES FOR MOBILE SCREENS */
@@ -224,7 +240,7 @@ p.error {
 
 
 div.about {
-    font-family: 'Hi Melody', cursive;
+    font-family: "Snell Roundhand", cursive;
     font-size: 1.5em;
     /* margin: auto;*/
     display: flex;
@@ -243,14 +259,41 @@ h1.about {
 p.about {
     padding-right: 4%;
     padding-left: 4%;
+    text-align:left
 }
+div.aboutshow{
+text-align: center;  
+float:right;
+padding-right: 4%;
+margin:inherit;
+font-family: "Snell Roundhand", cursive;
+font-size: 1.5em;
+flex-direction: column;
+}
+p.aboutshow{
+text-align: left; 
 
+
+margin:auto;
+font-family:"Snell Roundhand", cursive;
+    font-size: 1.0em;
+}
+div.quote{
+background:blue;
+color:white;
+border-color:black;
+border-width:thick;
+border-style:solid;
+
+
+}
 p.quote {
     text-align: center;
     padding-right: 4%;
     padding-left: 4%;
     margin-top: .5%;
     margin-bottom: .5%;
+    font-family:"Brush Script MT", "Brush Script Std", cursive
 }
 
 p.from {
@@ -266,8 +309,11 @@ div.recipe {
     display: flex;
     padding-bottom: 2%;
     justify-content: center;
-    align-content: center;
-    margin: auto;
+
+align-content: center;
+margin:auto;
+padding: 20px
+
 }
 
 img#recipe {
@@ -275,9 +321,23 @@ img#recipe {
     /* max-width: 60%;*/
     object-fit: contain;
     border-radius: 15px;
-    width: 45vw;
+    width: 275.0px;
+    
+    display: flex;
+ border-style:solid;
+ border-width: 30px;
+ border-color:violet
 }
+img.retro{
+ margin:auto;
+ border-radius: 15px;
+ display: flex;
+ border-style:solid;
+ border-width: 30px;
+ border-color: #FFFF66;
+ width: 300px;
 
+}
 
 
 
@@ -302,6 +362,7 @@ section.gallery {
 
 div.gallText {
     padding-top: 20px;
+    
 }
 
 h2.galleryhead {
@@ -315,6 +376,9 @@ p.gallPara {
     text-indent: 1.5em;
     padding-left: 3%;
     padding-right: 2%;
+
+    text-align: center;
+    
 
 }
 
@@ -337,6 +401,9 @@ div.button {
     width: 150%;
     object-fit: contain;
     transition: .3s ease;
+    border-style: solid;
+    border-color: white;
+    border-width:15px
 }
 
 .button:hover {
@@ -351,15 +418,42 @@ div.button {
 div.button img {
     width: 75%;
     border-radius: 25px;
+    
 }
+div.container{
+position:relative;
+text-align:center;
+color:black;
 
-
+font-size:40.0px
+}
+div.buttontext{
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-40%);
+}
+div.arttypecaptions{
+margin:auto;
+text-align:left;
+font-size:2.25em;
+color: white;
+word-spacing:27px;
+border-color: black;
+border-width: 5px;
+border-style:solid;
+background:fuchsia
+}
 div.artTypeLinks {
     display: flex;
     flex-direction: row;
     /* align-items: center;*/
     justify-content: space-between;
+    border-style:solid;
+    border-width:thick;
+    border-color:black
     /*margin: 5%;*/
+    
 }
 
 a.artType {
@@ -524,15 +618,14 @@ div.artDesc p {
     background-position: center;
     color: black;
     font-weight: bold;
-    border-radius: 10px;
-    text-shadow: 
-    -1px -1px 0 white, 
-1px -1px 0 white, 
--1px 1px 0 white, 
-1px 1px 0 white;
-}
 
-.dropdown:hover .dropdown-content {
+  }
+  
+  a.link{
+ color:white
+  }
+  .dropdown:hover .dropdown-content {
+
     display: block;
 }
 
@@ -680,63 +773,70 @@ div.artDesc p {
 
 /* RESPONSIVE MOBILE SCREENS - LIGHTBOX (full view) IMAGES */
 
-@media only screen and (max-width : 950px) /*(orientation: portrait)*/ {
-    lightbox:target img {
-        max-width: 90%;
-        margin-top: 30vh;
-        object-position: center;
 
-    }
+@media only screen and (max-width: 950px) /*(orientation: portrait)*/ {
+  lightbox:target img { max-width: 90%; 
+  margin-top: 30vh;
+  object-position:center;
+  
+  }
+  
+  lightbox:target div.fullDesc {
+      margin-bottom: 500vh;
+  }
 
-    lightbox:target div.fullDesc {
-        margin-bottom: 500vh;
-    }
+  a.navLink{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 90%;
+  }
+  .navbar{
+      flex-wrap: nowrap;
+  }
 
-    a.navLink {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        font-size: 90%;
-    }
-    .navbar {
-        flex-wrap: nowrap;
-    }
+  h1.title, h3.title{
+      font-size: .9rem;
+  }
+  h2.galleryhead, p.gallPara {
+      font-size: 1rem;
+  }
+div.artBrowse h2{
+ font-size: 1rem;
+ text-align:center
+}
+p.artBrowse{
+font-size: 1rem;
+ text-align:right  
+}
+p.oldcaptions{
+text-align:left   
+}
+  div.seriesTitle p{
+      font-size: 1rem;
+  }
 
-    h1.title,
-    h3.title {
-        font-size: .9rem;
-    }
-    h2.galleryhead,
-    p.gallPara,
-    div.artBrowse h1 {
-        font-size: 1rem;
-    }
+  div.seriesWrap{
+      flex-flow: column !important;
+  }
 
-    div.seriesTitle p {
-        font-size: 1rem;
-    }
+  div.SartDesc{
+      font-size: .6rem;
+  }
 
-    div.seriesWrap {
-        flex-flow: column !important;
-    }
+  div.row{
+      flex-flow:column !important;
+  }
 
-    div.SartDesc {
-        font-size: .6rem;
-    }
-
-    div.row {
-        flex-flow: column !important;
-    }
-
-    p.foot {
-        font-size: 1rem;
-    }
+  p.foot{
+      font-size: 1rem;
+  }
 
 }
 
-/* phone orientation: portrait */
-/*  
+/* phone orientation: portrait */ 
+
 @media only screen and (max-device-width: 500px) {
     .lightbox:target img {
         margin-top: 25vh;
