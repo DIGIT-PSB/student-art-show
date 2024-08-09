@@ -94,11 +94,11 @@ p.foot {
     font-size: 1.25em;
 }
 div.footer{
-background:black;
-color:white;
+background: pink;
+color:black;
 border-width:thick;
 border-style: solid;
-border-color:red;
+border-color:white;
 font-family:"Snell Roundhand", cursive;
 
 }
@@ -279,8 +279,8 @@ font-family:"Snell Roundhand", cursive;
     font-size: 1.0em;
 }
 div.quote{
-background:blue;
-color:white;
+background:#E6E6FA;
+color:black;
 border-color:black;
 border-width:thick;
 border-style:solid;
@@ -362,13 +362,15 @@ section.gallery {
 
 div.gallText {
     padding-top: 20px;
+    font-family:"Snell Roundhand", cursive;
     
 }
 
 h2.galleryhead {
     /*text-indent: 2em;*/
-    font-size: 2em;
+    font-size: 1.75em;
     text-align: center;
+    font-family:"Short Round",cursive
 }
 
 p.gallPara {
@@ -385,6 +387,7 @@ p.gallPara {
 
 div.artBrowse {
     text-align: center;
+   
 }
 
 div.artBrowse h1 {
@@ -421,6 +424,7 @@ div.button img {
     
 }
 div.container{
+background:#DDA0DD;
 position:relative;
 text-align:center;
 color:black;
@@ -432,6 +436,7 @@ position:absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%,-40%);
+color:LightPink
 }
 div.arttypecaptions{
 margin:auto;
@@ -451,7 +456,8 @@ div.artTypeLinks {
     justify-content: space-between;
     border-style:solid;
     border-width:thick;
-    border-color:black
+    border-color:white;
+    
     /*margin: 5%;*/
     
 }
@@ -579,10 +585,11 @@ div.artDesc p {
     font-weight: bold;
     border: none;
     outline: none;
-    padding: 14px 16px;
-    background-color: inherit;
+    padding: 7px 8px;
+    background-color: pink;
     font-family: inherit;
     margin: 0;
+    color:white
 }
 
 .dropdown-content {
@@ -590,7 +597,7 @@ div.artDesc p {
     border-radius: 10px;
     position: absolute;
     background-color: #ffccff;
-    min-width: 160px;
+    min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -636,13 +643,17 @@ div.artDesc p {
     /*background-image: url(images/watercolor_background2.jpeg);*/
     background-position: bottom right;
     border-radius: 10px;
+    background:pink;
+    
 }
 
 .currentYearBtnWrap a {
     color: rgb(0, 0, 0);
     font-weight: bold;
     text-decoration: none;
-    transition: .3s
+    transition: .3s;
+    color:white;
+    font-size:1.5em
 }
 
 .currentYearBtnWrap:hover {
@@ -662,6 +673,7 @@ div.artDesc p {
         background-position: bottom right;
         border-radius: 10px;
         max-width: 26vw;
+        
     }
 
     .currentYearBtnWrap a {
@@ -804,7 +816,8 @@ div.artDesc p {
   }
 div.artBrowse h2{
  font-size: 1rem;
- text-align:center
+ text-align:center;
+ font-family: "Snell Roundhand", cursive;
 }
 p.artBrowse{
 font-size: 1rem;
