@@ -93,13 +93,13 @@ p.foot {
     font-family: "Snell Roundhand", cursive;
     font-size: 1.25em;
 }
-div.footer{
-background:black;
-color:white;
-border-width:thick;
-border-style: solid;
-border-color:red;
-font-family:"Snell Roundhand", cursive;
+div.footer {
+    background: black;
+    color: white;
+    border-width: thick;
+    border-style: solid;
+    border-color: red;
+    font-family: "Snell Roundhand", cursive;
 
 }
 
@@ -132,21 +132,21 @@ h2.homeHead {
     /*text-indent: 2em;*/
     text-align: center;
     margin: 1.5%;
-    font-family:"Snell Roundhand", cursive;
-    font-size:2.5em
+    font-family: "Snell Roundhand", cursive;
+    font-size: 2.5em
 }
 
 p.homeText {
     padding-right: 4%;
     padding-left: 4%;
-    font-size:1.75em
+    font-size: 1.75em
 }
 
 div.patpic {
     display: flex;
     padding-bottom: 2%;
 
-    justify-content:center;
+    justify-content: center;
     max-height: 75vh;
 
 }
@@ -156,7 +156,7 @@ img#pat {
     width: 40%;
     flex: 1;*/
 
-    max-width:25vw;
+    max-width: 25vw;
 
     width: 60%;
     opacity: 1;
@@ -188,24 +188,26 @@ div.biopic {
 div.biopic iframe {
 
     max-width: 46vw;
-   /* height: 45%;*/
-    object-fit:contain;
+    /* height: 45%;*/
+    object-fit: contain;
     max-height: 46vh;
 
 }
 
 /* RESPONSIVE CSS STYLES FOR MOBILE SCREENS */
 
-@media only screen and (max-width : 800px) /*(orientation: portrait)*/ {
+/*@media only screen and (max-width : 800px) /\*(orientation: portrait)*\/ {
     div.biopic iframe {
         max-width: 90%;
 
         object-position: center;
-        /*max-height: 35vh;*/
+        /\*max-height: 35vh;*\/
         max-height: 20vh;
     }
+    
+}*/
 
-}
+
 
 
 
@@ -259,31 +261,31 @@ h1.about {
 p.about {
     padding-right: 4%;
     padding-left: 4%;
-    text-align:left
+    text-align: left
 }
-div.aboutshow{
-text-align: center;  
-float:right;
-padding-right: 4%;
-margin:inherit;
-font-family: "Snell Roundhand", cursive;
-font-size: 1.5em;
-flex-direction: column;
+div.aboutshow {
+    text-align: center;
+    float: right;
+    padding-right: 4%;
+    margin: inherit;
+    font-family: "Snell Roundhand", cursive;
+    font-size: 1.5em;
+    flex-direction: column;
 }
-p.aboutshow{
-text-align: left; 
+p.aboutshow {
+    text-align: left;
 
 
-margin:auto;
-font-family:"Snell Roundhand", cursive;
+    margin: auto;
+    font-family: "Snell Roundhand", cursive;
     font-size: 1.0em;
 }
-div.quote{
-background:blue;
-color:white;
-border-color:black;
-border-width:thick;
-border-style:solid;
+div.quote {
+    background: blue;
+    color: white;
+    border-color: black;
+    border-width: thick;
+    border-style: solid;
 
 
 }
@@ -293,7 +295,7 @@ p.quote {
     padding-left: 4%;
     margin-top: .5%;
     margin-bottom: .5%;
-    font-family:"Brush Script MT", "Brush Script Std", cursive
+    font-family: "Brush Script MT", "Brush Script Std", cursive
 }
 
 p.from {
@@ -310,9 +312,9 @@ div.recipe {
     padding-bottom: 2%;
     justify-content: center;
 
-align-content: center;
-margin:auto;
-padding: 20px
+    align-content: center;
+    margin: auto;
+    padding: 20px
 
 }
 
@@ -322,20 +324,20 @@ img#recipe {
     object-fit: contain;
     border-radius: 15px;
     width: 275.0px;
-    
+
     display: flex;
- border-style:solid;
- border-width: 30px;
- border-color:violet
+    border-style: solid;
+    border-width: 30px;
+    border-color: violet
 }
-img.retro{
- margin:auto;
- border-radius: 15px;
- display: flex;
- border-style:solid;
- border-width: 30px;
- border-color: #FFFF66;
- width: 300px;
+img.retro {
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    border-style: solid;
+    border-width: 30px;
+    border-color: #FFFF66;
+    width: 300px;
 
 }
 
@@ -362,7 +364,7 @@ section.gallery {
 
 div.gallText {
     padding-top: 20px;
-    
+
 }
 
 h2.galleryhead {
@@ -378,7 +380,7 @@ p.gallPara {
     padding-right: 2%;
 
     text-align: center;
-    
+
 
 }
 
@@ -403,7 +405,7 @@ div.button {
     transition: .3s ease;
     border-style: solid;
     border-color: white;
-    border-width:15px
+    border-width: 15px
 }
 
 .button:hover {
@@ -418,42 +420,42 @@ div.button {
 div.button img {
     width: 75%;
     border-radius: 25px;
-    
-}
-div.container{
-position:relative;
-text-align:center;
-color:black;
 
-font-size:40.0px
 }
-div.buttontext{
-position:absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-40%);
+div.container {
+    position: relative;
+    text-align: center;
+    color: black;
+
+    font-size: 40.0px
 }
-div.arttypecaptions{
-margin:auto;
-text-align:left;
-font-size:2.25em;
-color: white;
-word-spacing:27px;
-border-color: black;
-border-width: 5px;
-border-style:solid;
-background:fuchsia
+div.buttontext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+div.arttypecaptions {
+    margin: auto;
+    text-align: left;
+    font-size: 2.25em;
+    color: white;
+    word-spacing: 27px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    background: fuchsia
 }
 div.artTypeLinks {
     display: flex;
     flex-direction: row;
     /* align-items: center;*/
     justify-content: space-between;
-    border-style:solid;
-    border-width:thick;
-    border-color:black
+    border-style: solid;
+    border-width: thick;
+    border-color: black
     /*margin: 5%;*/
-    
+
 }
 
 a.artType {
@@ -619,12 +621,12 @@ div.artDesc p {
     color: black;
     font-weight: bold;
 
-  }
-  
-  a.link{
- color:white
-  }
-  .dropdown:hover .dropdown-content {
+}
+
+a.link {
+    color: white
+}
+.dropdown:hover .dropdown-content {
 
     display: block;
 }
@@ -653,12 +655,12 @@ div.artDesc p {
     text-decoration: underline;
 }
 
-@media screen and (max-width : 950px) {
+/*@media screen and (max-width : 950px) {
     .currentYearBtnWrap {
         position: absolute;
         right: 10vw;
         padding: 4px;
-        /*background-image: url(images/watercolor_background2.jpeg);*/
+        /\*background-image: url(images/watercolor_background2.jpeg);*\/
         background-position: bottom right;
         border-radius: 10px;
         max-width: 26vw;
@@ -672,14 +674,14 @@ div.artDesc p {
 
     }
 
-}
+}*/
 
 
 
-@media screen and (max-width : 950px) {
-/* .topnav a:not(:first-child), .dropdown .dropbtn {
+/*@media screen and (max-width : 950px) {
+/\* .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
-    } */
+    } *\/
     .topnav a.icon {
         float: right;
         display: block;
@@ -720,7 +722,7 @@ div.artDesc p {
         width: 100%;
         text-align: left;
     }
-}
+}*/
 /*   
   @media screen and (max-width: 600px) {
     
@@ -774,7 +776,7 @@ div.artDesc p {
 /* RESPONSIVE MOBILE SCREENS - LIGHTBOX (full view) IMAGES */
 
 
-@media only screen and (max-width: 950px) /*(orientation: portrait)*/ {
+/*@media only screen and (max-width: 950px) /\*(orientation: portrait)*\/ {
   lightbox:target img { max-width: 90%; 
   margin-top: 30vh;
   object-position:center;
@@ -800,8 +802,12 @@ div.artDesc p {
       font-size: .9rem;
   }
   h2.galleryhead, p.gallPara {
-      font-size: 1rem;
+      font-size: 1.5rem;
   }
+  button.dropbtn{
+      font-size: 1.2rem;
+  }
+
 div.artBrowse h2{
  font-size: 1rem;
  text-align:center
@@ -833,11 +839,11 @@ text-align:left
       font-size: 1rem;
   }
 
-}
+}*/
 
-/* phone orientation: portrait */ 
+/* phone orientation: portrait */
 
-@media only screen and (max-device-width: 500px) {
+/*@media only screen and (max-device-width: 500px) {
     .lightbox:target img {
         margin-top: 25vh;
         
@@ -851,8 +857,7 @@ text-align:left
         margin-top: 2%;
     }
 }
-*/
-/* END RESPONSIVE LIGHTBOX RULES FOR MOBILE SCREENS  */
+*\//\** END RESPONSIVE LIGHTBOX RULES FOR MOBILE SCREENS  *\/
 
 
 
@@ -861,7 +866,7 @@ text-align:left
     flex-flow: column;
     justify-content: flex-start;
     width: 100%;
-}
+}*/
 
 
 
@@ -1168,4 +1173,88 @@ img#bluenote {
     max-width: 40%;
     /* max-height: 32%;*/
     object-fit: contain;
+}
+
+@media screen and (max-width : 767px) {
+    a.navlink {
+        max-width: 27%;
+        max-height: 20px;
+    }
+    h2.galleryhead {
+        font-size: 2rem;
+    }
+    p.gallPara {
+        font-size: 1.5rem;
+    }
+    div.buttontext {
+        font-size: 2rem;
+        text-shadow: 
+        1px 1px 0px white, 
+-1px 1px 0px white, 
+1px 1px 0px white, 
+1px 1px 0px white;
+    }
+    h1.title {
+        font-size: 2rem;
+    }
+    .dropdown .dropbtn {
+        padding: 5px;
+        font-size: 1.3rem;
+        border: 2px solid grey;
+    }
+    div.artDesc p {
+        font-size: 1.2rem;
+    }
+    .lightbox:target div.fullDesc {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(77, 77, 77, 0.8);
+        z-index: 10;
+        font-size:1.3rem;
+        min-width:40%;
+    }
+}
+@media screen and (max-width : 434px) {
+    a.navlink {
+        max-width: 27%;
+        max-height: 20px;
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+    h2.galleryhead {
+        font-size: 2rem;
+    }
+    p.gallPara {
+        font-size: 1.5rem;
+    }
+    div.buttontext {
+        font-size: 1.3rem;
+        
+    }
+    div.button img{
+        width:125%;
+    }
+    h1.title {
+        font-size: 2rem;
+    }
+    .dropdown .dropbtn {
+        padding: 5px;
+        font-size: 1.3rem;
+        border: 2px solid grey;
+    }
+    div.artDesc p {
+        font-size: .8rem;
+    }
+    .lightbox:target div.fullDesc {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(77, 77, 77, 0.8);
+        z-index: 10;
+        font-size:1.3rem;
+        min-width:40%;
+    }
 }
