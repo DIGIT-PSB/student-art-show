@@ -93,13 +93,15 @@ p.foot {
     font-family: "Snell Roundhand", cursive;
     font-size: 1.25em;
 }
-div.footer {
-    background: black;
-    color: white;
-    border-width: thick;
-    border-style: solid;
-    border-color: red;
-    font-family: "Snell Roundhand", cursive;
+
+div.footer{
+background: pink;
+color:black;
+border-width:thick;
+border-style: solid;
+border-color:white;
+font-family:"Snell Roundhand", cursive;
+
 
 }
 
@@ -280,12 +282,14 @@ p.aboutshow {
     font-family: "Snell Roundhand", cursive;
     font-size: 1.0em;
 }
-div.quote {
-    background: blue;
-    color: white;
-    border-color: black;
-    border-width: thick;
-    border-style: solid;
+
+div.quote{
+background:#E6E6FA;
+color:black;
+border-color:black;
+border-width:thick;
+border-style:solid;
+
 
 
 }
@@ -369,8 +373,9 @@ div.gallText {
 
 h2.galleryhead {
     /*text-indent: 2em;*/
-    font-size: 2em;
+    font-size: 1.75em;
     text-align: center;
+    font-family:"Short Round",cursive
 }
 
 p.gallPara {
@@ -387,6 +392,7 @@ p.gallPara {
 
 div.artBrowse {
     text-align: center;
+   
 }
 
 div.artBrowse h1 {
@@ -422,38 +428,45 @@ div.button img {
     border-radius: 25px;
 
 }
-div.container {
-    position: relative;
-    text-align: center;
-    color: black;
 
-    font-size: 40.0px
+div.container{
+background:#DDA0DD;
+position:relative;
+text-align:center;
+color:black;
+
+font-size:40.0px
 }
-div.buttontext {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
+div.buttontext{
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-40%);
+color:LightPink
 }
-div.arttypecaptions {
-    margin: auto;
-    text-align: left;
-    font-size: 2.25em;
-    color: white;
-    word-spacing: 27px;
-    border-color: black;
-    border-width: 5px;
-    border-style: solid;
-    background: fuchsia
+div.arttypecaptions{
+margin:auto;
+text-align:left;
+font-size:2.25em;
+color: white;
+word-spacing:27px;
+border-color: black;
+border-width: 5px;
+border-style:solid;
+background:fuchsia
+
 }
 div.artTypeLinks {
     display: flex;
     flex-direction: row;
     /* align-items: center;*/
     justify-content: space-between;
-    border-style: solid;
-    border-width: thick;
-    border-color: black
+
+    border-style:solid;
+    border-width:thick;
+    border-color:white;
+    
+
     /*margin: 5%;*/
 
 }
@@ -581,10 +594,11 @@ div.artDesc p {
     font-weight: bold;
     border: none;
     outline: none;
-    padding: 14px 16px;
-    background-color: inherit;
+    padding: 7px 8px;
+    background-color: pink;
     font-family: inherit;
     margin: 0;
+    color:white
 }
 
 .dropdown-content {
@@ -592,7 +606,7 @@ div.artDesc p {
     border-radius: 10px;
     position: absolute;
     background-color: #ffccff;
-    min-width: 160px;
+    min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -638,13 +652,17 @@ a.link {
     /*background-image: url(images/watercolor_background2.jpeg);*/
     background-position: bottom right;
     border-radius: 10px;
+    background:pink;
+    
 }
 
 .currentYearBtnWrap a {
     color: rgb(0, 0, 0);
     font-weight: bold;
     text-decoration: none;
-    transition: .3s
+    transition: .3s;
+    color:white;
+    font-size:1.5em
 }
 
 .currentYearBtnWrap:hover {
@@ -664,6 +682,7 @@ a.link {
         background-position: bottom right;
         border-radius: 10px;
         max-width: 26vw;
+        
     }
 
     .currentYearBtnWrap a {
@@ -810,7 +829,8 @@ a.link {
 
 div.artBrowse h2{
  font-size: 1rem;
- text-align:center
+ text-align:center;
+ font-family: "Snell Roundhand", cursive;
 }
 p.artBrowse{
 font-size: 1rem;
