@@ -47,6 +47,7 @@ div.navbar {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 
 }
 
@@ -58,7 +59,7 @@ a.navLink {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 120%;
-    font-family: 'Rock Salt', cursive;
+    font-family: "Short Round",cursive;
     /*background-image: url(images/watercolor_background2.jpeg);*/
     background-position: right bottom;
     border-radius: 25px;
