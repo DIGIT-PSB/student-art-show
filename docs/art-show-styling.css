@@ -308,10 +308,8 @@ div.gallText {
     text-align: center;
 }
 p.gallPara {
-    text-indent: 1.5em;
-    padding-left: 3%;
-    padding-right: 2%;
-    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: 0;
 }
 div.artBrowse {
