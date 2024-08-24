@@ -10,6 +10,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     margin: 0;
+    min-height: 100vh;
 }
 
 .lightbox:target img,
@@ -85,7 +86,7 @@ footer {
     margin: auto;
     display: flex;
     flex-direction: row;
-
+    background: rgba(255, 250, 250, .8);
 }
 
 p.foot {
@@ -95,8 +96,9 @@ p.foot {
 }
 
 div.footer{
-    background: rgba(255, 250, 250, .8);
     color: black;
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -151,27 +153,7 @@ div.biopic iframe {
 
 }
 
-/* RESPONSIVE CSS STYLES FOR MOBILE SCREENS */
-
-/*@media only screen and (max-width : 800px) /\*(orientation: portrait)*\/ {
-    div.biopic iframe {
-        max-width: 90%;
-
-        object-position: center;
-        /\*max-height: 35vh;*\/
-        max-height: 20vh;
-    }
-    
-}*/
-
-
-
-
-
-
-
 /* 404 ERROR PAGE */
-
 div.error {
     /*font-size: 1.5em;*/
     margin: auto;
@@ -179,32 +161,20 @@ div.error {
     flex-direction: column;
     text-align: center;
 }
-
 h1.error {
     margin-top: 2%;
     margin-bottom: 1%;
-    /*font-size: 2em;*/
 }
-
 p.error {
     padding-right: 5%;
     padding-left: 5%;
 }
 
-
-
-
 /* ABOUT PAGE */
-
-
 div.about {
-    /*font-size: 1.5em;*/
-    /* margin: auto;*/
     display: flex;
     flex-direction: column;
     margin: auto;
-
-
 }
 
 h1.about {
@@ -212,35 +182,23 @@ h1.about {
     margin-top: 1%;
     text-align: center;
 }
-
-p.about {
-    padding-right: 4%;
-    padding-left: 4%;
-    text-align: left
-}
 div.aboutshow {
     text-align: center;
     float: right;
     padding-right: 4%;
     margin: inherit;
-    /*font-size: 1.5em;*/
     flex-direction: column;
 }
 p.aboutshow {
     text-align: left;
     margin: auto;
-    /*font-size: 1.0em;*/
 }
-
 div.quote{
 background:#E6E6FA;
 color:black;
 border-color:black;
 border-width:thick;
 border-style:solid;
-
-
-
 }
 p.quote {
     text-align: center;
@@ -248,9 +206,8 @@ p.quote {
     padding-left: 4%;
     margin-top: .5%;
     margin-bottom: .5%;
-    font-family: "Brush Script MT", "Brush Script Std", cursive
+    font-family: 'Rock Salt', sans-serif;
 }
-
 p.from {
     text-align: center;
     padding-right: 4%;
@@ -259,25 +216,18 @@ p.from {
     margin-bottom: 1%;
     text-indent: 4em;
 }
-
 div.recipe {
     display: flex;
     padding-bottom: 2%;
     justify-content: center;
-
     align-content: center;
     margin: auto;
     padding: 20px
-
 }
-
 img#recipe {
-    /*margin: auto;*/
-    /* max-width: 60%;*/
     object-fit: contain;
     border-radius: 15px;
     width: 275.0px;
-
     display: flex;
     border-style: solid;
     border-width: 30px;
@@ -291,28 +241,30 @@ img.retro {
     border-width: 30px;
     border-color: #FFFF66;
     width: 300px;
-
 }
-
-
-
 
 
 /* ART EXHIBITS PAGE STYLING */
 /*Photo gallery also uses some of this CSS*/
-div.gallText {
+.gallSect {
     text-align: center;
 }
-.gallText h2 {
-    font-family: 'Rock Salt', sans-serif;
-    text-align: center;
+.gallSect *{
+    margin: 1rem auto;
 }
-p.gallPara {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: 0;
-}
-div.artBrowse {
+/*div.gallText {*/
+/*    text-align: center;*/
+/*}*/
+/*.gallText h2 {*/
+/*    font-family: 'Rock Salt', sans-serif;*/
+/*    text-align: center;*/
+/*}*/
+/*p.gallPara {*/
+/*    padding-left: 1rem;*/
+/*    padding-right: 1rem;*/
+/*    margin: 0;*/
+/*}*/
+.artBrowse h3 {
     text-align: center;
 }
 .button:hover {
@@ -322,19 +274,20 @@ div.artBrowse {
     opacity: .6;
     border-style: double;
 }
-div.container{
-    position:relative;
-}
-div.container img {
-     width: 100%;
-     border-radius: 25px;
-}
-.container img {
-    max-width: 100%;
-}
 .buttontext{
-position:absolute;
-top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    position:absolute;
+    top: 35%;
+    color: black;
+    text-shadow: -1px 1px 0 white,
+    1px 1px 0 white,
+    1px -1px 0 white,
+    -1px -1px 0 white;
+}
+#photoBut, #digartBut{
+    top: 40%;
 }
 div.arttypecaptions{
 margin:auto;
@@ -353,8 +306,15 @@ div.artTypeLinks {
     max-width: 100%;
 }
 a.artType {
-    display: flex;
     max-width: 20%;
+    position:relative;
+}
+a.artType img {
+     width: 100%;
+     border-radius: 25px;
+ }
+.artType img {
+    max-width: 100%;
 }
 div.artwork {
     opacity: 1;
@@ -376,6 +336,7 @@ div.artwork a img.art:hover {
     outline-color: white;
 }
 div.artWrap {
+    margin: 2rem 0;
     display: flex;
     flex-direction: row;
     overflow-y: auto;
@@ -383,6 +344,7 @@ div.artWrap {
     height: 95%;
     align-items: center;
     justify-content: space-around;
+    font-size: 1rem;
 }
 div.column {
     display: flex;
@@ -427,8 +389,7 @@ div.artDesc {
     flex-wrap: wrap;
 }
 div.artDesc p {
-    line-height: .1em;
-    margin-top: 4px;
+    margin: 0;
 }
 
 
